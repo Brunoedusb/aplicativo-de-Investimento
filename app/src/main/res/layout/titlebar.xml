@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:gravity="fill_horizontal"
+    android:orientation="horizontal"
+    tools:showIn="@layout/home"
+    android:background="@color/colorBlue">
+
+    <TextView
+        style="@style/edittext"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:gravity="center"
+        android:text="Calcule o retorno de seus rendimentos"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorBlue"/>
+
+</LinearLayout>

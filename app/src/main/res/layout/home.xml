@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/lineardefault"
+    tools:showIn="@layout/activity_main">
+
+    <include layout="@layout/titlebar"/>
+
+    <GridLayout
+        style="@style/layout_12_8"
+        android:background="@color/colorCCinza">
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_columnSpan="12"
+            android:layout_rowSpan="2"
+            android:layout_gravity="fill"
+            android:columnCount="2"
+            android:rowCount="1">
+            <EditText
+                android:id="@+id/textName"
+                style="@style/edittext_radius"
+                android:layout_columnSpan="2"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginTop="0dp"
+                android:hint="Seu Nome"
+                android:inputType="numberDecimal" />
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_columnSpan="12"
+            android:layout_rowSpan="2"
+            android:layout_gravity="fill"
+            android:columnCount="2"
+            android:rowCount="2">
+
+            <TextView
+                style="@style/titletext"
+                android:layout_marginBottom="1dp"
+                android:layout_columnSpan="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Valor inicial"/>
+
+            <EditText
+                android:id="@+id/textInitialValue"
+                style="@style/edittext_radius"
+                android:layout_columnSpan="2"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginTop="0dp"
+                android:hint="Qual valor deseja investir inicialmente"
+                android:inputType="numberDecimal" />
+        </GridLayout>
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_columnSpan="12"
+            android:layout_rowSpan="2"
+            android:layout_gravity="fill"
+            android:columnCount="2"
+            android:rowCount="2">
+
+            <TextView
+                style="@style/titletext"
+                android:layout_marginBottom="1dp"
+                android:layout_columnSpan="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Aporte Mensal"/>
+
+            <EditText
+                android:id="@+id/textContribution"
+                style="@style/edittext_radius"
+                android:layout_columnSpan="2"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginTop="0dp"
+                android:hint="Qual valor será investido mensalmente"
+                android:inputType="numberDecimal" />
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_columnSpan="12"
+            android:layout_rowSpan="2"
+            android:layout_gravity="fill"
+            android:columnCount="2"
+            android:rowCount="1">
+
+            <TextView
+                style="@style/titletext"
+                android:layout_marginBottom="1dp"
+                android:layout_columnSpan="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tempo do Investimento"/>
+
+            <EditText
+                android:id="@+id/textTime"
+                style="@style/edittext_radius"
+                android:layout_columnSpan="2"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginTop="0dp"
+                android:hint="Por quanto tempo deseja investir"
+                android:inputType="number" />
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_columnSpan="12"
+            android:layout_rowSpan="2"
+            android:layout_gravity="fill"
+            android:columnCount="2"
+            android:rowCount="2">
+
+            <TextView
+                style="@style/titletext"
+                android:layout_marginBottom="1dp"
+                android:layout_columnSpan="2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Taxa"/>
+
+            <EditText
+                android:id="@+id/textRate"
+                style="@style/edittext_radius"
+                android:layout_columnSpan="2"
+                android:layout_gravity="fill_horizontal"
+                android:layout_marginTop="0dp"
+                android:hint="Digite a taxa mensal"
+                android:inputType="numberDecimal" />
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_columnSpan="12"
+            android:layout_rowSpan="2"
+            android:layout_gravity="fill"
+            android:columnCount="2"
+            android:rowCount="1">
+
+            <Button
+                style="@style/button_primary_radius"
+                android:id="@+id/buttoncalcular"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Calcular"
+                android:layout_gravity="center_horizontal"
+                android:padding="15dp"
+                android:onClick="onClickYieldCalculate"></Button>
+
+            <Button
+                android:id="@+id/buttonHist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Historico"
+                android:layout_gravity="center_horizontal"
+                android:padding="15dp"></Button>
+        </GridLayout>
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_columnSpan="12"
+            android:layout_rowSpan="3"
+            android:layout_gravity="fill"
+            android:columnCount="2"
+            android:rowCount="1">
+
+            <TextView
+                android:id="@+id/textResult"
+                style="@style/edittext_radius"
+                android:layout_height="75dp"
+                android:layout_columnSpan="2"
+                android:layout_gravity="fill_horizontal"
+                android:hint="Valor no período"
+                android:inputType="numberDecimal" />
+        </GridLayout>
+    </GridLayout>
+</LinearLayout>
